@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>write new chat</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 400px;
+        margin: 50px auto;
+        background: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+        text-align: center;
+    }
+    .form-group {
+        margin-bottom: 20px;
+    }
+    label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+    }
+    input[type="text"],
+    
+    input[type="password"] {
+        width: 100%;
+        padding: 8px;
+        border-radius: 3px;
+        border: 1px solid #ccc;
+    }
+    input[type="submit"] {
+        width: 100%;
+        background-color: #4caf50;
+        color: #fff;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 3px;
+    }
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+    h3{
+
+        text-align: center;
+    }
+
+
+    </style>
+</head>
+<body>
+    <h3>write new chat..</h3>
+    <div class="container">
+        <h2>Simple Form</h2>
+        <form method="POST" action="/chats">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text"  name="from" required>
+            </div>
+            <div class="form-group">
+                <input  type="text" name="msg" placeholder="write your message here" style="height: 50px;">
+                
+            </div>
+            <div class="form-group">
+                <label for="name">send:</label>
+                <input type="text" placeholder="add recevier" name="to">
+                
+            </div>
+            
+            
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+        
+    
+</body>
+</html>
+
+    
+
+        
+    
+
+</html>
